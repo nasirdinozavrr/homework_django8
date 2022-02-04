@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body>
+<div>
+    <form action="/add-order/" method="POST">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="Add order">
+    </form>
+</div>
+</body>
+</html>
